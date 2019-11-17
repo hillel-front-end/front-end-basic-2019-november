@@ -1,0 +1,117 @@
+<!--
+            Свойство font-weight - Устанавливает насыщенность шрифта.
+
+            Значение устанавливается от 100 до 900 с шагом 100.
+            Сверхсветлое начертание, которое может отобразить браузер, имеет значение 100, а сверхжирное — 900.
+            Нормальное начертание шрифта (которое установлено по умолчанию) эквивалентно 400,
+            стандартный полужирный текст — значению 700.
+
+            Насыщенность шрифта задается с помощью ключевых слов:
+            bold — полужирное начертание, 
+            normal — нормальное начертание.
+            Также допустимо использовать условные единицы от 100 до 900.
+
+
+-->
+
+<html>
+<head>
+    <title>Свойство font-weight</title>
+    <style type="text/css">
+        body{
+            color: #000000;
+            background-color: #ffffff;
+            font-family: arial, verdana, sans-serif;
+            font-size: 12px;
+        }
+
+        .one{
+            font-weight: normal;
+        }
+
+        .two{
+            font-weight: bold;
+        }
+
+        .three{
+            font-weight: normal;
+        }
+
+        .four{
+            font-weight: 100;
+        }
+
+        .fife{
+            font-weight: 200;
+        }
+
+        .six{
+            font-weight: 300;
+        }
+
+        .seven{
+            font-weight: 400;
+        }
+
+        .eight{
+            font-weight: 500;
+        }
+
+        .nine{
+            font-weight: 600;
+        }
+
+        .ten{
+            font-weight: 700;
+        }
+
+        .eleven{
+            font-weight: 800;
+        }
+
+        .twelve{
+            font-weight: 900;
+        }
+
+        .column {
+            width: 150px;
+            float: left;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font Weight</h1>
+    <div>
+        <p class="one"> normal </p>
+        <p class="two"> bold   </p>
+        <p class="three">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque est soluta ipsam ex magni, consequuntur nobis accusantium illum laboriosam totam adipisci porro molestias velit officia quidem, impedit ut, dicta distinctio.
+        </p>
+
+    </div>
+
+
+    <div class="column">
+
+        <p class="four">
+            100</p>
+        <p class="fife">
+            200</p>
+        <p class="six">
+            300</p>
+        <p class="seven">
+            400</p>
+        <p class="eight">
+            500</p>
+        <p class="nine">
+            600</p>
+        <p class="ten">
+            700</p>
+        <p class="eleven">
+            800</p>
+        <p class="twelve">
+            900</p>
+    </div>
+</body>
+</html>
