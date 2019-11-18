@@ -7,7 +7,7 @@
  * https://learn.javascript.ru/font-size-line-height
 
  # Практика
-* https://drive.google.com/drive/folders/10ZE3wDHsfIjuaMnjDC2DZ-grVLYp33ih?usp=sharing
+* Макет верстки находится по ссылке: https://drive.google.com/drive/folders/10ZE3wDHsfIjuaMnjDC2DZ-grVLYp33ih?usp=sharing
  1. файл css-intro - картинка для верстки
  2. файл schema -  схема которая поможет в представлении как разбивать на сущьности.
 
