@@ -1,0 +1,53 @@
+<!--
+    Свойство CSS Display нужен для установки типа html элемента относительно других элементов.
+    Проще говоря это опция отвечает за то, как отображать элемент относительно други.
+    Значения:
+      *block  - блочный элемент (автоматически создает перевод строки)
+      *inline - встроенный элемент (не создает перевода строки, и не доступны сss cвойства:
+        width\height, margin-top, margin-bottom);
+      *none   - Элемент не показывается, вообще. Как будто его и нет.
+-->
+
+<html>
+<head>
+    <title>Display</title>
+    <meta charset="utf-8">
+    <style>
+        span, div{
+            font-size: 25px;
+        }
+
+        div {
+            /* display: inline; */
+        }
+
+        span{
+            display: block;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <span>span - 1</span>
+    <span>span - 2</span>
+    <span>span - 3</span>
+
+    <hr/>
+
+    <div class="item">div - 1</div>
+    <div class="item">div - 2</div>
+    <div class="item">div - 3</div>
+
+    <hr/>
+
+    <p class="hidden">Параграф который не будет виден.</p>
+
+    <hr/>
+
+    <span class="no-workin-class">На строчные элементы не действуют сss cвойства: margin-top, margin-bottom, width, height</span>
+</body>
+</html>

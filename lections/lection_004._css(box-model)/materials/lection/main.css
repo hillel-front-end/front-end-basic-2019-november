@@ -1,0 +1,12 @@
+
+.main .foo2 {
+    color: gray;
+}
+
+.foo {
+    color: red !important;
+}
+
+/* .main .foo2 span span {
+
+} */

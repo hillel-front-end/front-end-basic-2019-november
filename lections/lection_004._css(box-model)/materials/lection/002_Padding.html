@@ -1,0 +1,33 @@
+﻿<!--
+   Свойство Padding отвечает за отступы внутри элемента, от границ до его содержимого.  
+   Так же можно  добавлять внутренний отступ на конкретную сторону:
+   padding-top - внутренний отступ сверху.
+   padding-bottom - внутренний отступ снизу.
+   padding-left - внутренний отступ слева.
+   padding-right - внутренний отступ справа.
+-->
+<html>
+    <head>
+        <title>Свойство padding</title>
+        <style>
+            .parent{
+                width:200px;  
+                height: 110px;
+                border: 1px solid black;
+                padding: 10px 0px 10px 0px;
+
+            }
+            .child {
+                width: 100%;
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                    Cодержимое будет отступать от границ на 30px
+            </div>
+        </div>
+    </body>
+</html>
