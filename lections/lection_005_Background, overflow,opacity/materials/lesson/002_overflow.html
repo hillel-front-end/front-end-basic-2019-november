@@ -1,0 +1,60 @@
+<!--
+    Свойство overflow управляет тем, как ведёт себя содержимое блочного элемента, если его размер превышает допустимую длину/ширину.
+    Обычно блок увеличивается в размерах при добавлении в него элементов, заключая в себе всех потомков.
+
+    Если высота/ширина указаны явно,тогда блок не может увеличиться, и содержимое «переполняет» блок.
+    Что может привести к выподания содержимого блока
+    Его отображение в этом случае задаётся свойством overflow.
+
+    Можно указать поведение блока при переполнении по ширине в overflow-x и высоте – в overflow-y.
+
+    Значения:
+        - visible;
+        - hidden;
+        - scroll;
+        - auto
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .chat-content {
+            width: 50%;
+            height: 500px;
+            border: 1px solid red;
+            margin: auto;
+            overflow-y: auto;
+        }
+
+        .messges {
+            padding: 10px;
+        }
+
+        .message-item {
+            border: 1px solid greenyellow;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="chat-content">
+        <div class="messges">
+            <div class="message-item">asdasdasdsadasdasdasd</div>
+            <div class="message-item">asdasdasdsadasdasdasd</div>
+            <div class="message-item">asdasdasdsadasdasdasd</div>
+            <div class="message-item">asdasdasdsadasdasdasd</div>
+            <div class="message-item">asdasdasdsadasdasdasd</div>
+
+        </div>
+    </div>
+
+</body>
+</html>
