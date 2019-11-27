@@ -31,14 +31,45 @@
     <title>Position</title>
     <meta charset="utf-8">
     <style>
+        span {
+            border: 1px solid red;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        body {
+            text-align: center;
+            height: 5000px;
+        }
+
+        .nav {
+            display: block;
+            position: relative;
+            border: 1px solid red;
+        }
+
+        .pos-absolute {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .pos-fixed {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
     </style>
 </head>
 <body>
     <h3>Relative</h3>
 
     <div class="nav">
-        <span>Главная</span>
-        <span>Новость</span>
+        <span class="pos-absolute">Главная</span>
+        <span class="pos-fixed">Новость</span>
         <span>Блог</span>
     </div>
 
