@@ -1,0 +1,108 @@
+body{
+    display:flex;
+    flex-direction: column;
+}
+
+.block-1{
+    width: 100%;
+    height: 200px;
+    background:red;
+}
+
+.block-2{
+    width: 100%;
+    height: 200px;
+    background:greenyellow;
+}
+
+/* 
+@media screen and (max-width:880px) {
+    body {
+        flex-direction: row;
+    }
+
+    .block-1, .block-2 {
+        width: 50%;
+    }
+
+    .block-1 {
+        background-color: black;
+    }
+
+    .block-2 {
+        background-color: red;
+    }
+}
+
+
+@media screen and (max-width:420px) {
+    body {
+        flex-direction: column;
+    }
+
+    .block-1, .block-2 {
+        width: 100%;
+    }
+
+    .block-1 {
+        background-color: gold;
+    }
+
+    .block-2 {
+        background-color: blue;
+    }
+} */
+
+
+
+/* 
+@media screen and (min-width:768px){
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .block-1{
+        width: 50%;
+    }
+    .block-2{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:768px){
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .block-1{
+        width: 50%;
+    }
+    .block-2{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:420px){
+    body{
+        flex-direction: row;
+    }
+    .block-1{
+        background: yellow;
+    }
+    .block-2{
+        background: pink;
+        color: green;
+    }
+} */
+
+@media(min-width: 768px) and (max-width: 991px) {
+    body{
+        flex-direction: row;
+    }
+    .block-1{
+        width: 50%;
+    }
+    .block-2{
+        width: 50%;
+    }
+}
