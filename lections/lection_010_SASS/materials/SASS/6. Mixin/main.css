@@ -1,0 +1,73 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 14px;
+  color: pink;
+  border-radius: 10px;
+  border: 1px solid blue;
+  padding-right: 20px;
+}
+.button:hover {
+  color: blue;
+}
+.button:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+}
+
+.second-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 14px;
+  color: pink;
+  border-radius: 10px;
+  border: 1px solid blue;
+  padding-right: 20px;
+}
+.second-button:hover {
+  color: blue;
+}
+.second-button:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.parent .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid pink;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.container .block {
+  width: 60%;
+  height: 200px;
+  background: red;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

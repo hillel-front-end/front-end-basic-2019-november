@@ -1,0 +1,71 @@
+@mixin flexbox-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$corporate-color: pink;
+
+@mixin button() {
+    position: relative;
+    display: inline-block;
+    padding: 10px 14px;
+    color: $corporate-color;
+    border-radius: 10px;
+    border: 1px solid blue;
+    // transition: all 1s ease;
+    padding-right: 20px;
+    &:hover {
+        color: blue;
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        background-color: blue;
+        width: 15px;
+        height: 15px;
+
+    }
+}
+
+
+
+
+.button {
+    @include button(); // +button() - sass
+}
+
+.second-button {
+    @include button();
+}
+
+
+@mixin flexbox($flexDirection, $justifyContent, $alignItems) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+.parent {
+    @include flexbox(column, center, center);
+    .navigation {
+        @include flexbox-center();
+    }
+}
+
+
+.container {
+    border: 1px solid pink;
+    height: 500px;
+    @include flexbox(column, flex-start, flex-end);
+    .block {
+        width: 60%;
+        height: 200px;
+        background: red;
+        border: 1px solid black;
+        margin-bottom: 30px;
+    }
+}

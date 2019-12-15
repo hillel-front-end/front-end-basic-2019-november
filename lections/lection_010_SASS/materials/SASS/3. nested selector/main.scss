@@ -1,0 +1,34 @@
+.header {
+    position: relative;
+
+    .logo-wrapper {
+        float: right;
+        .logo {
+            display: block;
+            &:hover {
+                color: blue;
+            }
+
+            &:after {
+                content: '';
+            }
+        }
+    }
+
+    .navigation {
+        float: left;
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+
+// .logo {
+
+// }
+
+// .logo:hover {
+
+// }

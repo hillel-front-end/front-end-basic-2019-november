@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+}
+.header .logo-wrapper {
+  float: right;
+}
+.header .logo-wrapper .logo {
+  display: block;
+}
+.header .logo-wrapper .logo:hover {
+  color: blue;
+}
+.header .logo-wrapper .logo:after {
+  content: '';
+}
+.header .navigation {
+  float: left;
+}
+.header .navigation:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=main.css.map */
