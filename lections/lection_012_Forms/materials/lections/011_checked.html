@@ -5,10 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
 
+        .menu {
+            width: 100px;
+            height: 100px;
+            background-color: red;;
+            opacity: 0;
+            position: relative;
+            z-index: 66;
+            transition: all 2s;
+        }
+
+        #checkbox:checked ~ .menu{
+            opacity: 1;
+
+        }
+
+        #checkbox:checked ~ .backdrop{
+            display: block;
+        }
+
+        .button {
+            display: inline-block;
+            border: 1px solid red;
+            color: red;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .backdrop {
+            display: none;
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+
+            z-index: 50;
+        }
+    
+    </style>
 </head>
 <body>
     <input type="checkbox" id="checkbox">
-    <label for="checkbox">Hello world</label>
+
+
+    <label class="button" for="checkbox">Hello world</label>
+
+    <div class="menu">
+
+    </div>
+
+    <label for="checkbox" class="backdrop"></label>
 </body>
 </html>

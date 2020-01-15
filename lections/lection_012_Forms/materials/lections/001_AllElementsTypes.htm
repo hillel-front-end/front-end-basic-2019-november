@@ -6,10 +6,16 @@
 <body>
     <form>
         <!--Однострочное поле ввода-->
-        <input type="text"  value="Текст по умолчанию" />
+        <input type="text" maxlength="10" name="firstName"/>
+        <!--Однострочное поле ввода-->
+        <input type="number" maxlength="10" name="age"/>
 
+        <br />
+        <br />
+        <br />
+        <input type="button" value="button"  />
         <!--Кнопка, основное событие click-->
-        <input type="button" value="buttonфывфыв"/>
+
 
         <br />
         <br />
@@ -20,10 +26,19 @@
         <br />
 
         <!--Флажок, основное событие click-->
-        <input type="checkbox" checked="checked"/>
+        <label for="moto">Motorola</label>
+        <input id="moto" type="checkbox" checked="checked" name="motorola"/>
         <input type="checkbox" />
         <input type="checkbox" />
         Check Box 1
+        <br />
+        <br />
+
+
+        <input id="moto" type="radio" checked="checked" name="mobile"/>
+        <input type="radio"  name="mobile"/>
+        <input type="radio"  name="mobile"  />
+
         <br />
         <br />
 
