@@ -1,0 +1,57 @@
+<!-- 
+CSS Grid. Технология совершенно новая и официально стала поддерживаться 
+современными браузерами только в середине 2017 года.
+
+1) Для того чтоб начать работать с grid нам нужен grid контейнер (подобно как в flexbox).
+(display: grid)
+
+2)grid-template-columns - задаем кол-во колонок в ряду:
+    - grid-template-columns: n[px,%], n[px, %], ..., n[px, %]
+    - сколько раз записано n - столько и колонок
+    - где, n -  css значение размера колонки в ширину
+
+
+3) grid-template-rows - задаем кол-во рядов
+    - grid-template-rows: n[px,%], n[px, %], ..., n[px, %]
+    - сколько раз записано n - столько и рядов будут задействованы
+    - где, n -  css значение размера ячейки в высоту внутри ряда
+
+4)  grid-row-gap - отступ между ячейка по горизонтали
+    grid-column-gap - отступ между ячейка по вертикали
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 20% 60% 20%; */
+            /* grid-column-gap: 10px; */
+            
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-row-gap: 10px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="cell">Item - 1</div>
+        <div class="cell">Item - 2</div>
+        <div class="cell">Item - 3</div>
+        <div class="cell">Item - 4</div>
+        <div class="cell">Item - 5</div>
+        <div class="cell">Item - 6</div>
+        <div class="cell">Item - 7</div>
+        <div class="cell">Item - 8</div>
+        <div class="cell">Item - 9</div>
+        <div class="cell">Item - 10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- 
+fr - это новая форма единицы измерения, в основном ассоциируемая с CSS Grid
+
+Если вы указываете ширину в 1fr, то вы можете дальше добавлять столько элементов, 
+сколько возможно и это она об этом позаботиться. 
+Ширина каждого элемента будет равномерно разделена среди дочерних элементов.
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 2fr 1fr 3fr; */
+            grid-column-gap: 10px;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-row-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="cell">Item - 1</div>
+        <div class="cell">Item - 2</div>
+        <div class="cell">Item - 3</div>
+    </div>
+</body>
+</html>

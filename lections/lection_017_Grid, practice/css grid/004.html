@@ -1,0 +1,55 @@
+<!-- 
+ * justify-items производит выравнивание "всех" элементов макета сетки по оси строки grid-контенера.
+ (https://basicweb.ru/css/css_pr_justify-items.php)
+ * align-items - тобы произвести выравнивание "всех" элементов макета сетки по оси столбца grid-контейнера
+ (https://basicweb.ru/css/css_pr_align-items.php)
+
+ * align-self - производит выравнивание "элемента" макета сетки внутри ячейки по оси столбца grid-контейнера
+ * justify-self - выравнивание "элемента" макета сетки внутри ячейки по оси столбца grid-контенера
+
+ * justify-content -  установить выравнивание "сетки" внутри контейнера  вдоль оси "строки".
+ * align-content -  установить выравнивание "сетки" внутри контейнера  вдоль оси "колонки" .
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Additional</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-column-gap: 10px;
+            grid-template-rows: repeat(5, 100px);  
+            grid-row-gap: 10px;
+            
+            /* justify-items: center; */
+            /* align-items: center; */
+        }
+
+        .end {
+            /* justify-self: flex-end; */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="cell">Item - 1</div>
+        <div class="cell">Item - 2</div>
+        <div class="cell">Item - 3</div>
+        <div class="cell">Item - 4</div>
+        <div class="cell">Item - 5</div>
+        <div class="cell end">Item - 6</div>
+        <div class="cell">Item - 7</div>
+        <div class="cell">Item - 8</div>
+        <div class="cell">Item - 9</div>
+        <div class="cell">Item - 10</div>
+
+    </div>
+    <div>213123</div>
+</body>
+</html>

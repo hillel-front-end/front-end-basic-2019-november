@@ -1,0 +1,48 @@
+<!-- 
+    * repeat(n, size[1] - size[n]); - позволяет определять множество колонок или строк 
+    (используя grid-template-columns и grid-template-rows) в более укороченном варианте. 
+    Первый параметр это число повторений, а второй это то, что вы собираетесь повторять
+
+  * minmax(min, max) - позволяет вам указывать минимальное и максимальное значение одновременно
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Repeat</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-column-gap: 10px;
+
+            /* одно и тоже */
+            /* grid-template-rows: repeat(5, 100px);  */ 
+            /* grid-template-rows: 100px 100px 100px */ 
+            grid-row-gap: 10px;
+
+
+            /* 3 - задать минимальную высоту ряда и максимальную одновременно */
+            /* grid-auto-rows: minmax(100px, auto);  */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="cell">Item - 1</div>
+        <div class="cell">Item - 2</div>
+        <div class="cell">Item - 3</div>
+        <div class="cell">Item - 4</div>
+        <div class="cell">Item - 5</div>
+        <div class="cell">Item - 6</div>
+        <div class="cell">Item - 7</div>
+        <div class="cell">Item - 8</div>
+        <div class="cell">Item - 9</div>
+        <div class="cell">Item - 10</div>
+
+    </div>
+    <div>213123</div>
+</body>
+</html>
