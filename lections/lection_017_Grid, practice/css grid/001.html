@@ -6,7 +6,7 @@ CSS Grid. Технология совершенно новая и официал
 (display: grid)
 
 2)grid-template-columns - задаем кол-во колонок в ряду:
-    - grid-template-columns: n[px,%], n[px, %], ..., n[px, %]
+    - grid-template-columns: n[px,%] n[px, %] ,..., n[px, %]
     - сколько раз записано n - столько и колонок
     - где, n -  css значение размера колонки в ширину
 
@@ -29,15 +29,18 @@ CSS Grid. Технология совершенно новая и официал
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
         .grid-container {
             display: grid;
-            /* grid-template-columns: 20% 60% 20%; */
-            /* grid-column-gap: 10px; */
-            
-            /* grid-template-rows: 100px 100px 100px; */
-            /* grid-row-gap: 10px; */
-
+            grid-template-columns: 20% 60% 20%;
+            grid-column-gap: 5px;            
+            grid-row-gap: 5px;
         }
+        
     </style>
 </head>
 <body>

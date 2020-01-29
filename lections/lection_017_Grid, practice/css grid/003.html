@@ -14,34 +14,40 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
             grid-column-gap: 10px;
 
             /* одно и тоже */
-            /* grid-template-rows: repeat(5, 100px);  */ 
-            /* grid-template-rows: 100px 100px 100px */ 
+            /* grid-template-rows: repeat(2, 100px);   */
+            /* grid-template-rows: 100px 100px 100px  */
             grid-row-gap: 10px;
 
 
             /* 3 - задать минимальную высоту ряда и максимальную одновременно */
-            /* grid-auto-rows: minmax(100px, auto);  */
+            /* grid-auto-rows: minmax(100px, 100px);  */
 
+        }
+
+        .grid-inner-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
         }
     </style>
 </head>
 <body>
     <div class="grid-container">
-        <div class="cell">Item - 1</div>
+        <div class="cell">
+            <div class="grid-inner-content">
+                <div class="cell">Item - 2</div>
+                <div class="cell">Item - 2</div>
+                <div class="cell">Item - 2</div>
+                <div class="cell">Item - 2</div>
+            </div>
+        </div>
         <div class="cell">Item - 2</div>
         <div class="cell">Item - 3</div>
-        <div class="cell">Item - 4</div>
-        <div class="cell">Item - 5</div>
-        <div class="cell">Item - 6</div>
-        <div class="cell">Item - 7</div>
-        <div class="cell">Item - 8</div>
-        <div class="cell">Item - 9</div>
-        <div class="cell">Item - 10</div>
-
     </div>
     <div>213123</div>
 </body>
