@@ -1,0 +1,33 @@
+.sprite {
+    height: 84px;
+    width: 84px;
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position-y: -146px;
+    transition: all .2s;
+
+    &:hover{
+        background-position-y: -62px;
+    }
+
+    // &:nth-child(2) {
+    //     background-position-x: -84px;
+    // }
+
+    // &:nth-child(3) {
+    //     background-position-x: -168px;
+    // }
+
+    $count: 10;
+    $start: 1;
+
+    @for $i from $start through $count {
+        @if $i >= 3 {
+            &:nth-child(#{$i}) {
+                background-position-x: -84px * $i;
+            }
+        }
+    }
+}
+
+
